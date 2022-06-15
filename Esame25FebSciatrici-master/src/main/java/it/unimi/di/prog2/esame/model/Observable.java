@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 public interface Observable<T> {
 
-    public void notifyObservers();
+    void notifyObservers();
 
     void addObserver(@NotNull Observer<T> observer);
 

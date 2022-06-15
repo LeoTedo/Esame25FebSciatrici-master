@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class FinalRankPresenter implements Presenter{
+public class FinalRankPresenter implements Observer<List<Skier>>{
 
     private final Model m;
     private final RankView view;
@@ -39,14 +39,5 @@ public class FinalRankPresenter implements Presenter{
                 }
             }
         }
-}
-
-
-
-
-
-    @Override
-    public void action(String text1, String text2) {
-//NULLA
     }
 }

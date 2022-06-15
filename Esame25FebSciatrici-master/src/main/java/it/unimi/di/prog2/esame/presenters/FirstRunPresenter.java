@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class FirstRunPresenter implements Presenter{
+public class FirstRunPresenter implements Observer<List<Skier>>{
 
     private final Model m;
     private final RankView view;
@@ -26,10 +26,5 @@ public class FirstRunPresenter implements Presenter{
             view.set(i, s.getName()+" "+s.getTime());
             i++;
         }
-    }
-
-    @Override
-    public void action(String text1, String text2) {
-//NULLA
     }
 }

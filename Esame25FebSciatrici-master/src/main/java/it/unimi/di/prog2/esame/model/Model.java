@@ -61,10 +61,12 @@ public class Model implements Observable<List<Skier>> {
   }
 
   public @NotNull List<Skier> getGara(){
-    return gara;
+    ArrayList<Skier> garaC = gara;
+    return garaC;
   }
 
   public @NotNull List<Skier> getFinale(){
-    return finale;
+    ArrayList<Skier> finaleC = finale;
+    return finaleC;
   }
 }

@@ -12,9 +12,9 @@ public class Skier {
         this.time = time;
     }
 
-public Skier addTime(double t){
-        return new Skier(name, t);
-}
+//public Skier addTime(double t){
+       // return new Skier(name, t);
+//}
 
     public String getName() {
         return name;

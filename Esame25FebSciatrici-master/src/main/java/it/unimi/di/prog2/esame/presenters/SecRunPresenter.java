@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecRunPresenter implements Presenter{
+public class SecRunPresenter implements Observer<List<Skier>> {
 
     public SecRunPresenter(@NotNull Model m,@NotNull RankView view) {
         this.m = m;
@@ -20,6 +20,7 @@ public class SecRunPresenter implements Presenter{
 
     private final Model m;
     private final RankView view;
+
     @Override
     public void update(@NotNull Observable<List<Skier>> subject, @NotNull List<Skier> state) {
         int i =0;
@@ -32,10 +33,5 @@ public class SecRunPresenter implements Presenter{
             }
             i++;
         }
-    }
-
-    @Override
-    public void action(String text1, String text2) {
-//NULLA
     }
 }
